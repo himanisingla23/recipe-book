@@ -7,8 +7,8 @@ const app =  express();
 app.use(bodyparser.urlencoded({extended:true}));
 app.use(express.static("public"));
 
-const id = "3a267299";
-const key = "2beec82d419c9979ec5edde927e27d3f";
+const id = "";
+const key = "";
 
 
 
