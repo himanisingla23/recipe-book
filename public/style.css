@@ -1,0 +1,99 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+}
+  
+.upper-section{
+    background-color:#fd5e53;
+    width: 100vw;
+    height:80vh ;
+}
+.chef,h1,h2,.chefcap
+{
+    position: absolute;
+}
+.chef{
+    left: -9vw;
+    top: -6vh;
+}
+
+.chefcap{
+    right: 6vw;
+    top: 20vh;
+}
+h1{
+position: absolute;
+width: 510px;
+height: 81px;
+left: 365px;
+top: 110px;
+
+font-family: Microsoft Uighur;
+font-style: normal;
+font-weight: normal;
+font-size: 120px;
+line-height: 78px;
+color: #FFFFFF;
+text-shadow:5px 3px #1b6ca8
+
+}
+h2{
+position: absolute;
+width: 400px;
+height: 80px;
+left:400px;
+top:225px;
+
+font-family: Arial, Helvetica, sans-serif;
+font-style: italic;
+font-weight: lighter;
+font-size: 45px;
+color: black;
+}
+
+.bottom
+{
+    width: 100vw;
+    height:10vh;
+    
+}
+input[type=text]
+{
+    margin-left: 42vw;
+    top:30vh;
+    left:10vw;
+    margin-top: 30px;
+    width: 25vw;
+    height:4vh;
+   font-weight: bolder;
+   text-align: center;
+   border-radius: 15px;
+   outline: none;  
+}
+
+button
+{ 
+  background-color: #D4B5B0;
+  cursor:pointer;
+  padding: 3px;
+  text-align: center;
+  border-radius: 4px;
+  border-color: black;
+  font-size: 16px;
+  font-weight: bolder;
+  box-shadow:2px 2px chocolate;
+  transition-duration: 2s;
+}
+button:hover
+{
+    color: darkblue;
+    background-color: gainsboro;
+    font-weight: bolder;
+    
+}
