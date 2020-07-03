@@ -6,94 +6,95 @@ body{
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-
-}
-  
+} 
 .upper-section{
     background-color:#fd5e53;
     width: 100vw;
     height:80vh ;
+    position: relative;
+    text-align: center;
+    font-size: 2em;
+    z-index: -1;
 }
-.chef,h1,h2,.chefcap
-{
-    position: absolute;
+.bottom{
+    width: 100vw;
+    height: 20vh;
+    text-align: center;
 }
 .chef{
-    left: -9vw;
-    top: -6vh;
+    position: absolute;
+    left: -10vw;
+    bottom: 0;
+    z-index: -1;
 }
-
 .chefcap{
-    right: 6vw;
-    top: 20vh;
+    position: absolute;
+    right: 0vw;
+    bottom: 0;
 }
-h1{
-position: absolute;
-width: 510px;
-height: 81px;
-left: 365px;
-top: 110px;
-
-font-family: Microsoft Uighur;
-font-style: normal;
-font-weight: normal;
-font-size: 120px;
-line-height: 78px;
-color: #FFFFFF;
-text-shadow:5px 3px #1b6ca8
-
+h1,h2{
+    z-index: 1;
+    color: #fff;
 }
-h2{
-position: absolute;
-width: 400px;
-height: 80px;
-left:400px;
-top:225px;
-
-font-family: Arial, Helvetica, sans-serif;
-font-style: italic;
-font-weight: lighter;
-font-size: 45px;
-color: black;
+.upper-section h1{
+    padding-top: 20vh;
 }
-
-.bottom
-{
-    width: 100vw;
-    height:10vh;
+.upper-section h2{
+    padding-top: 5vh;
+}
+input[type=search]{
+    height: 40px;
+    width: 300px;
+    font-size: 20px;
+    margin: 5vh 2vw;
+    border-radius: 20px;
+    border: 1px solid #000;
+    outline: none;
+    padding: 5px;
+}
+input[type=search]:focus{
+    outline: none;
+}
+::placeholder{
+    text-align: center;
+}
+button{
+    font-size: 20px;
+    padding:  5px 10px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background-color: #fd5e53;
+}
+button:hover{
+    color: #fff;
+    background-color: rgba(253, 94, 83,0.7);
+}
+@media only screen and (max-width: 800px){
+    .chef{
+        display: none;
+    }
+    .upper-section h1{
+        padding-top: 10vh;
+        text-align: center;
+    }
+    .chefcap{
+        position: relative;
+        margin-top: 20px;
+    }
     
 }
-input[type=text]
-{
-    margin-left: 42vw;
-    top:30vh;
-    left:10vw;
-    margin-top: 30px;
-    width: 25vw;
-    height:4vh;
-   font-weight: bolder;
-   text-align: center;
-   border-radius: 15px;
-   outline: none;  
+@media only screen and (max-width: 600px){
+    .upper-section h2{
+        font-size: 1.2em;
+    }
 }
-
-button
-{ 
-  background-color: #D4B5B0;
-  cursor:pointer;
-  padding: 3px;
-  text-align: center;
-  border-radius: 4px;
-  border-color: black;
-  font-size: 16px;
-  font-weight: bolder;
-  box-shadow:2px 2px chocolate;
-  transition-duration: 2s;
-}
-button:hover
-{
-    color: darkblue;
-    background-color: gainsboro;
-    font-weight: bolder;
+@media only screen and (max-width: 450px){
+    .upper-section h1{
+        font-size: 1.5em;
+    }
+    .upper-section h2{
+        font-size: 20px;
+    }
     
 }
