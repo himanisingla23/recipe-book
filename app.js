@@ -13,14 +13,25 @@ const key = "";
 
 
 app.post("/recipe",(req,res) =>{
-   var url="https://api.edamam.com/search?q=chicken&app_id="+id+"&app_key="+ key
    
+   let query = req.body.query;
 
-      request(url,function(error,response ,body)
-      {
-         console.log(body.hits[1].recipe.ingredientLines);
-      });
+   var url="https://api.edamam.com/search?q="+query+"&app_id="+id+"&app_key="+ key  ;
+   request(url,function(error,response ,body)
+   {
+      let obj = JSON.parse(body);
+      let result =obj.hits[0].recipe.ingredientLines
+      res.send("<p>"+result+"</p>");
+
+   
+   
    });
+
+
+});
+
+
+   
 app.get("/",(req,res)=>
 {
    res.sendFile(__dirname+"/index.html");

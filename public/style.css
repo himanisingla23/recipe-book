@@ -5,7 +5,7 @@
 body{
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+     overflow: hidden; 
 } 
 .upper-section{
     background-color:#fd5e53;
@@ -20,6 +20,7 @@ body{
     width: 100vw;
     height: 20vh;
     text-align: center;
+    background-color: black;
 }
 .chef{
     position: absolute;
@@ -84,6 +85,14 @@ button:hover{
     }
     
 }
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 600px){
     .upper-section h2{
         font-size: 1.2em;
